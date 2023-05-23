@@ -1,4 +1,5 @@
 # My personal portfolio website ⚡️
+(Ongoing)
 
 # Sections 📚
 ✔️ About me ✔️ Education ✔️ Work Experience ✔️ Skillset ✔️ Get in touch ✔️ My work ✔️ Resume ✔️ LinkedIn
