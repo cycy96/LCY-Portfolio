@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-/* text css above hero image*/
+/* About me- text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
 }
@@ -23,6 +23,14 @@
 .imageAboutPage {
     width: 100%;
 }
+
+/*Github contribution chart*/
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust the height as needed */
+  }
 
 /* services section css */
 .servicesText.card {
@@ -83,17 +91,7 @@
     color: #000000;
 }
 
-/* footer styling */
-#footer {
-    background-color: #808080;
-    text-align: center;
-}
-
-/*star*/
-.checked {
-    color: orange;
-  }
-
+/*contact - Typing effect*/
   @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
   .wrapper.four {
@@ -125,4 +123,14 @@
           border-color: transparent;
       }
   }
-  
+
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+}
+
+/*star*/
+.checked {
+    color: orange;
+  }
