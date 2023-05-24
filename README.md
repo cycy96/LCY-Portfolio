@@ -1,8 +1,11 @@
 # My personal portfolio website ⚡️
 (Ongoing)
 
-# Sections 📚
-✔️ About me ✔️ Education ✔️ Work Experience ✔️ Skillset ✔️ Get in touch ✔️ My work ✔️ Resume ✔️ LinkedIn
+# Technologies used
+🔶 HTML <br> 🔶 CSS <br> 🔶 JavaScript <br> 🔶 Bootstrap 5
 
-#Live Example
+# Sections 📚
+✔️ About me <br> ✔️ GitHub Contribution Chart <br>✔️ Education <br> ✔️ Work Experience <br> ✔️ Skillset <br> ✔️ Get in touch <br> ✔️ My work <br> ✔️ Resume <br> ✔️ LinkedIn
+
+# Live Example
 To view a live example, follow this link: https://cycy96.github.io/LCY-Portfolio/
