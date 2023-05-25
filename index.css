@@ -134,3 +134,13 @@
 .checked {
     color: orange;
   }
+
+@font-face {
+    font-family: 'Papyrus';
+    src: url('path/to/papyrus.ttf') format('truetype');
+}
+
+#intro {
+    font-family: 'Papyrus', Georgia;
+}
+  
