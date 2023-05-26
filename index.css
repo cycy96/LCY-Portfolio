@@ -32,6 +32,13 @@
     height: 300px; /* Adjust the height as needed */
   }
 
+/*Portfolio section - CSS for hover effect on button */
+.btn-success:hover {
+    background-color: #4e756d !important;
+    color: #cfe7d8 !important;
+    border: #4e756d;
+}
+
 /* services section css */
 .servicesText.card {
     height: 280px;
@@ -126,14 +133,14 @@
 
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color: #416257;
     text-align: center;
 }
 
 /*star*/
 .checked {
     color: orange;
-  }
+}
 
 @font-face {
     font-family: 'Papyrus';
