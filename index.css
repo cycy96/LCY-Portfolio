@@ -26,11 +26,16 @@
 
 /*Github contribution chart*/
 .chart-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 300px; /* Adjust the height as needed */
+    max-width: 800px; /* Adjust the width */
+    margin: 0 auto;
   }
+
+/* Align the parent container in the center */
+.container {
+    text-align: left;
+}
+
 
 /*Portfolio section - CSS for hover effect on button */
 .btn-success:hover {
@@ -99,37 +104,43 @@
 }
 
 /*contact - Typing effect*/
-  @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
-  .wrapper.four {
-      
-      font-size: 9rem;
-      font-family: "Play", sans-serif;
-  }
-  .four .type{
-      padding: 2rem 1rem;
-      width: auto;
-      margin: auto;
-  }
-  .four h3 {
-      width: 23ch;
-      border-right: 4px solid black;
-      margin: 2rem auto;
-      white-space: nowrap;
-      overflow: hidden;
-      animation: typing 3s steps(20, end), blink-caret 0.5s step-end infinite alternate;
-  }
+.wrapper.four {
+    font-size: 9rem;
+    font-family: "Play", sans-serif;
+}
 
-  @-webkit-keyframes typing {
-      from {
-          width: 0;
-      }
-  }
-  @-webkit-keyframes blink-caret {
-      50% {
-          border-color: transparent;
-      }
-  }
+.four .type {
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+}
+
+.four h3 {
+    width: 23ch;
+    border-right: 4px solid black;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end) infinite, blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    /* Add the final keyframe at 100% to set the width back to the original value */
+    100% {
+        width: 23ch;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
 
 /* footer styling */
 #footer {
