@@ -13,4 +13,4 @@
 ✔️ About me <br> ✔️ GitHub Contribution Chart <br>✔️ Portfolio <br> 
 
 # Live Example
-To view a live example, follow this link: https://cycy96.github.io/LCY-Portfolio/
+To view a live example, follow this link: [https://cycy96.github.io/LCY-Portfolio/](https://cycy96.github.io/lcheeyan-portfolio/)
