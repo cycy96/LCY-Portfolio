@@ -24,6 +24,22 @@
     width: 100%;
 }
 
+/* About me */
+.intro{
+    text-align: center;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'Papyrus';
+    src: url('path/to/papyrus.ttf') format('truetype');
+}
+
+#intro {
+    font-family: 'Papyrus', Georgia;
+}
+  
+
 /*Github contribution chart*/
 .chart-container {
     height: 300px; /* Adjust the height as needed */
@@ -36,13 +52,31 @@
     text-align: left;
 }
 
-
-/*Portfolio section - CSS for hover effect on button */
-.btn-success:hover {
-    background-color: #4e756d !important;
-    color: #cfe7d8 !important;
-    border: #4e756d;
+/*Portfolio section - CSS for button */
+.btn-success {
+    background-color: #c5e8ca !important;
+    color: #6e9080 !important;
 }
+
+.btn-success:hover {
+    background-color: #79a18d !important;
+    color: #c5e8ca !important;
+}
+
+.MoreAboutWorks {
+    text-align: right;
+}
+
+.btn-portfolio {
+    background-color: transparent !important;
+    color: #6e9080 !important;
+}
+
+.btn-portfolio:hover {
+    background-color: white !important;
+    color: #416257 !important;
+}
+
 
 /* services section css */
 .servicesText.card {
@@ -152,13 +186,3 @@
 .checked {
     color: orange;
 }
-
-@font-face {
-    font-family: 'Papyrus';
-    src: url('path/to/papyrus.ttf') format('truetype');
-}
-
-#intro {
-    font-family: 'Papyrus', Georgia;
-}
-  
