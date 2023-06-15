@@ -24,6 +24,25 @@
     width: 100%;
 }
 
+.imageAboutPage {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+  }
+
+  .imageAboutPage:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+  
 /* About me */
 .intro{
     text-align: center;
@@ -47,12 +66,26 @@
     margin: 0 auto;
   }
 
-/* Align the parent container in the center */
-.container {
-    text-align: left;
+/* Show card effect */
+.card:hover {
+    box-shadow: 0 0 0 5px #4c7d66, 0 0 5px #7dac8e;
+    transition: box-shadow 1s;
+  }
+
+.card:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
 }
 
-/*Portfolio section - CSS for button */
+.card {
+    perspective: 500px;
+}
+  
+.card:hover {
+    transform: rotateX(5deg) rotateY(5deg) scale(1.1);
+    transition: transform 0.5s;
+}  
+
 .btn-success {
     background-color: #c5e8ca !important;
     color: #6e9080 !important;
@@ -77,6 +110,86 @@
     color: #416257 !important;
 }
 
+/* Image Hover and zoom out */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+.snip1482 {
+  font-family: 'Fauna One', Arial, sans-serif;
+  position: relative;
+  margin: 10px 20px;
+  min-width: 230px;
+  max-width: 295px;
+  min-height: 250px;
+  width: 100%;
+  color: #4c7d66;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: white;
+  font-size: 16px;
+}
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 400px;
+  height: 300px; /* Keep the aspect ratio */
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.snip1482 figcaption {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.snip1482 h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.snip1482 p {
+  font-size: 0.8em;
+}
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
 
 /* services section css */
 .servicesText.card {
@@ -98,6 +211,7 @@
     border: 1px solid pink;
 }
 
+/*contact*/
 #contact{
     text-align: center;
 }
@@ -130,9 +244,11 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover {
+
+.fa-github:hover, .fa-linkedin-square:hover, .fa-telegram:hover, .fa-envelope:hover, .fa-behance-square:hover {
     color: white;
 }
+
 .fa,.fab,.fas {
     color: #000000;
 }
@@ -180,9 +296,12 @@
 #footer {
     background-color: #416257;
     text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #bfdfcb;
 }
 
 /*star*/
 .checked {
-    color: orange;
+    color: white;
 }
