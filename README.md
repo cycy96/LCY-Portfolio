@@ -13,4 +13,4 @@
 ✔️ About me <br> ✔️ GitHub Contribution Chart <br>✔️ Portfolio <br> ✔️ Design Inspiration <br>  ✔️ Contact <br> 
 
 # Live Example
-To view a live example, follow this link: [https://cycy96.github.io/LCY-Portfolio/](https://cycy96.github.io/lcheeyan-portfolio/)
+To view a live example, follow this link: [lcheeyan-portfolio.vercel.app](lcheeyan-portfolio.vercel.app)
