@@ -1,0 +1,314 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.trans{
+  left: -200px;
+  transform: translateX(-470px);
+  animation: slideRight .7s ease-in-out forwards .1s;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.trans1{
+  right: 200px;
+  transform: translateX(600px);
+  animation: slideLeft .7s ease-in-out forwards .7s;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+
+/* About me- text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+.imageAboutPage {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+  }
+
+  .imageAboutPage:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+  
+/* About me */
+.intro{
+    text-align: center;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'Papyrus';
+    src: url('path/to/papyrus.ttf') format('truetype');
+}
+
+#intro {
+    font-family: 'Papyrus', Georgia;
+}
+  
+
+/*Github contribution chart*/
+.chart-container {
+    height: 300px; /* Adjust the height as needed */
+    max-width: 800px; /* Adjust the width */
+    margin: 0 auto;
+  }
+
+/* Show card effect */
+.card {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 32px 0 grey;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  perspective: 500px;
+  text-align: center;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 32px 0 black;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}  
+
+.btn-success {
+    background-color: #c5e8ca !important;
+    color: #6e9080 !important;
+}
+
+.btn-success:hover {
+    background-color: #79a18d !important;
+    color: #c5e8ca !important;
+}
+
+.MoreAboutWorks {
+    text-align: right;
+}
+
+.btn-portfolio {
+    background-color: transparent !important;
+    color: #6e9080 !important;
+}
+
+.btn-portfolio:hover {
+    background-color: white !important;
+    color: #416257 !important;
+}
+
+/*contact*/
+#contact{
+    text-align: center;
+}
+
+.buttonforemail{
+    background-color: #f5f4ef;
+    border: none;
+    color: black;
+    margin: 20px;
+    padding: 20px 40px;
+    text-align: left;
+    width: 200px;
+  }
+  
+  .buttonforemail a:link, a:visited{
+  color: black;
+  }
+  
+  .buttonforemail a:hover{
+  color: #636363;
+  }
+
+  body {
+	background: #323641;
+}
+
+body {
+	background: #323641;
+}
+
+/* Button Styles */
+
+.buttonEmail {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #416257;
+    z-index: 0;
+    margin: 20px 20px 20px 20px;
+    color: #416257;
+    z-index: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  a {
+    color: #416257;
+    z-index: 0;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+  /* Button */
+  
+  #button-5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-5 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: #A3C9A8;
+    position: absolute;
+    transition: all .3s ease-Out;
+  }
+  
+  #button-5:hover #translate {
+    left: 0;
+  }
+  
+  #button-5 a:link, a:visited{
+    color: black;
+    }
+
+  @media screen and (min-width:1000px) {
+    h1 {
+      font-size: 2.2em;
+    }
+    #container {
+      width: 50%;
+    }
+  }
+
+/* navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* footer */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fa-github:hover, .fa-linkedin-square:hover, .fa-telegram:hover, .fa-envelope:hover, .fa-behance-square:hover {
+    color: white;
+}
+
+.fa,.fab,.fas {
+    color: #000000;
+}
+
+/*contact - Typing effect*/
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+.wrapper.four {
+    font-size: 9rem;
+    font-family: "Play", sans-serif;
+}
+
+.four .type {
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+}
+
+.four h3 {
+    width: 23ch;
+    border-right: 4px solid black;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end) infinite, blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    /* Add the final keyframe at 100% to set the width back to the original value */
+    100% {
+        width: 23ch;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* footer styling */
+#footer {
+    background-color: #416257;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #bfdfcb;
+}
+
+/*star*/
+.checked {
+    color: white;
+}
