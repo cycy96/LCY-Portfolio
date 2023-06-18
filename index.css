@@ -48,7 +48,7 @@ body {
 		-moz-transition: transform .4s .4s, z-index .2s .4s;
 		transform-origin: 50% 0%;
 		transition: transform .4s .4s, z-index .2s .4s;
-		border-color: #8BD5FE transparent transparent transparent;
+		border-color: #3cb8fa transparent transparent transparent;
 		z-index: 2;
 	}
 	
