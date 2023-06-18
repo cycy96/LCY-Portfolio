@@ -6,253 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
   <link rel="stylesheet" href="index.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<body>
-    <!-- navbar, keep the navbar at the top of the page -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #416257; color: #c2ceb0;">
-        <div class="container">
-            <a class="navbar-brand" href="#">Leong Chee Yan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <i class='bx bx-menu bx-md '></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#DesignInspirations">Design Inspiration</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+<body>   
+
+            <!-- Shooting Star Animation -->
+              <div class="sky">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
             </div>
-        </div>
-    </nav>
-        
-    </section>
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-5 pt-5">
-            <p></p>
-            <p></p>
-            <h1 class="text-center" style="color: #6d907f;">About Me</h1>
-            <div class="row mt-5">
-                <div class="col-lg-4 mt-4">
-                    <br>
 
-                    <img src="green shirt.jpg" class= "imageAboutPage" alt="imageAboutPage">
-
-                </div>
-
-                <div class="col-lg-8">
-                    <h4 style="color: #789B8C">&lt;html&gt;</h4>
-                    <h4 style="color: #99c39d">&nbsp; &nbsp; &nbsp; &lt;body&gt;</h4>
-                    <h4 style="color: #accaa6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;</h4>
-                    <div class="intro">
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Allow me to introduce myself.</p><br>
-                        <div id="intro">
-                        <h2 style="color: #3f6e6c">Hi there, <br>
-                            I'm Chee Yan.</h2>
-                            <br>
-                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I love to build things for the web. <br>
-                            My inspirations come from a photo, a theme or simple things in daily life.  
-                        </p>
-                    </div>
-                    </div>
-                    <h4 style="color: #accaa6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</h4>
-                    <h4 style="color: #99c39d">&nbsp; &nbsp; &nbsp; &lt;/body&gt;</h4>
-                    <h4 style="color: #789B8C">&lt;/html&gt;</h4>
-                </div>
+            <!-- Envelope -->
+            <div class="letter-image">
+                <a href="index1.html">
+            <div class="animated-mail">
+            <div class="back-fold"></div>
+            <div class="letter">
+            <div class="letter-border"></div>
+            <div class="letter-title">
             </div>
-    </section>
-
-<!-- Github section-->
-<section id="Github">
-<div class="container mt-5 pt-5"></div>
-<h1 style="text-align: center; color: #6d907f;">My GitHub Contribution Chart</h1>
-<div class="row mt-4"></div>
-<div class="chart-container">
-<div class="d-flex flex-nowrap overflow-auto">
-    <!-- GitHub contribution chart code -->
-    <!-- Include the library -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-    
-    <!-- GitHub contribution section -->
-    <div class="calendar">
-      <!-- Loading stuff -->
-      Loading the data ...
-    </div>
-    </div>
-    
-    <script>
-      GitHubCalendar(".calendar", "cycy96");
-    
-      // or enable responsive functionality:
-      GitHubCalendar(".calendar", "cycy96", { responsive: true });
-    
-      // Use a proxy
-      GitHubCalendar(".calendar", "cycy96", {
-         proxy(username) {
-           return fetch(`https://your-proxy.com/github?user=${cycy96}`);
-         }
-      }).then(r => r.text());
-    </script>
-  </div>
-</section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center" style="color: #6d907f;"><br>Some of my latest work</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="CNGUI.png" alt="Chinese Name Generator UI" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title" style="color: #4c7d66">Chinese Name Generator</h4>
-                            <p class="card-text" style="color: #7dac8e">A simple website which able to generate over 100 Chinese names,
-                                providing users plenty of choices to find their preferred chinese name easily.</p>
-                            <div class="text-center">
-                                <a href="https://cycy96.github.io/Chinese-Name-Generator/" target="_blank" class="btn btn-success" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;">View online</a>
-                                &nbsp;
-                                <a href="https://github.com/cycy96/Chinese-Name-Generator" target="_blank" class="btn btn-success" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;">Source code</a>
-                                &nbsp;
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="colouromicshtml.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title" style="color: #4c7d66">Colouromics</h4>
-                            <p class="card-text" style="color: #7dac8e">A simple website that provides a wide range of color palettes, along with their corresponding hex color codes, and it is completely free to use.</p>
-                            <div class="text-center">
-                                <a href="https://cycy96.github.io/Colouromics/" target="_blank" class="btn btn-success" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;">View online</a>
-                                &nbsp;
-                                <a href="https://github.com/cycy96/Colouromics" target="_blank" class="btn btn-success" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;">Source code</a>
-                                &nbsp;
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="MoreAboutWorks">
-                    <br>
-                    <a href="https://github.com/cycy96?tab=repositories" target="_blank" class="btn btn-portfolio">
-                        <span>&#128073;&#127995;</span> <b>View More Projects</b> </a>
-                </div>
-        </div>
-            
-    </section>              
-    
-<!-- Design section-->
-    <section id="DesignInspirations">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center" style="color: #6d907f;"><br>Design inspiration</h1>
-                <div class="row mt-4">
-                    <div class="col-lg-4 mt-4">
-                        <div class="card portfolioContent">    
-                            <img class="card-img-top" src="UI TechSpace.png" alt="UI TechSpace app" style="width:100%">
-                                <div class="card-body">
-                                    <h4 class="card-title" style="color: #4c7d66">TechSpace</h4>
-                                    <p class="card-text" style="color: #7dac8e">UI Design for Research Team Collaboration Mobile App</p>
-                                    <div class="text-center">
-                                        <a href="https://www.behance.net/gallery/171688297/TechSpace-Mobile-App-UI" target="_blank" class="btn btn-success" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;">View online</a>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="Colouromics.png" alt="Card image" style="width:100%">
-                            <div class="card-body">
-                                <h4 class="card-title" style="color: #4c7d66">Colouromics</h4>
-                                <p class="card-text" style="color: #7dac8e">UI Design for Ultimate Color Palette Collection Mobile App</p>
-                                <div class="text-center">
-                                    <a href="https://www.behance.net/gallery/172069523/Mobile-App-UI-Design-for-Hex-Colour-Collection" target="_blank" class="btn btn-success" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;">View online</a>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-
-
-                    <div class="MoreAboutWorks">
-                        <br>
-                        <a href="https://www.behance.net/leongcheeyan" target="_blank" class="btn btn-portfolio">
-                            <span>&#128073;&#127995;</span> <b>Explore more design inspiration</b> </a>
-                    </div>
-        </div>          
-    </section>
-
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-5 pt-5">
-            <h1 class="text-center" style="color: #6d907f;">Get in touch</h1>
-            <div class="row mt-4">
-                <div class="text-center">
-                    <div class="wrapper four">
-                        <div class="type">
-                            <h3 class="typing">My inbox is always open!</h3>
-                        </div>
-                    </div>  
-                </div>
-          <p style="font-size: 19px; text-align: center;">Whether you have a question or a project or just want to say hi, I will try my best to get back to you!</p>
-          <div class="text-center" >
+            <div class="letter-context">
             <br>
-            &nbsp;<a href="mailto: lcheeyan0530@gmail.com" style="background-color: #98cca7; color: #3f6e6c; border: #98cca7;" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-heart" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.76 2.76 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124c.146.277.329.556.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442c.22-.28.403-.56.55-.836L15 11.105V5.383l-3.002 1.801a2.76 2.76 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1H2Zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-              </svg> 
-                Say Hello!</a>
-	
+            Open for a special surprise!
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="text-center">
+            <div class="letter-stamp">
+            <div class="letter-stamp-inner"></div>
             </div>
-        </div>
-        </section>
-
-    <!-- footer section-->
-    <footer id="footer"> 
-        <div class="container-fluid">
-                <p><br>Designed & Developed by Leong Chee Yan <span class="fa fa-star checked"></span> 2023</p>
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://github.com/cycy96" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="https://t.me/Jennifer0530" target="_blank"><i class="fa fa-telegram"></i></a>
-                <a href="https://www.behance.net/leongcheeyan" target="_blank"><i class='fab fa-behance-square'></i></a>       
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a>  
-                <a href="mailto: lcheeyan0530@gmail.com" target="_blank" ><i class='fas fa-envelope'></i></a>
             </div>
+            <div class="top-fold"></div>
+            <div class="body"></div>
+            <div class="left-fold"></div>
+            </div>
+            <div class="shadow"></div>
+                </a>
         </div>
-    </footer>
 
-    <!-- load javascript after loading all html content -->
-    <script src="script.js"></script>
+          <!-- Star background -->
 
-</body>
+          <div class="background-container">
+            <div class="stars"></div>
+          </div>
+          
+          <!-- Shooting Star Animation -->
+          <div class="sky">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+
+        <!-- stars background for interact with cursor movement -->
+
+        <div class="bg">
+          <div class="z-3">
+            <div class="tile top-left animate-opacity freq-5"></div>
+            <div class="tile top-right animate-opacity freq-9"></div>
+            <div class="tile bottom-left animate-opacity freq-7"></div>
+            <div class="tile bottom-right animate-opacity freq-10"></div>
+          </div>
+          <div class="z-2">
+            <div class="tile top-left animate-opacity freq-9 delay-2"></div>
+            <div class="tile top-right animate-opacity freq-5 delay-2"></div>
+            <div class="tile bottom-left animate-opacity freq-6 delay-4"></div>
+            <div class="tile bottom-right animate-opacity freq-10 delay-4"></div>
+          </div>
+          <div class="z-1">
+            <div class="tile top-left animate-opacity freq-7 delay-2"></div>
+            <div class="tile top-right animate-opacity freq-5 delay-4"></div>
+            <div class="tile bottom-left animate-opacity freq-9 delay-2"></div>
+            <div class="tile bottom-right animate-opacity freq-5 delay"></div>
+          </div>
+        </div>
+
+      <!-- Javascript to make the stars interact with cursor movement -->
+      <script src="index.js"></script>
+
+
+    <!-- Enable Web Analytics in Vercel -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
+      </body>
+
 
 </html>
