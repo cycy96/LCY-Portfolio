@@ -1,5 +1,10 @@
 # My personal portfolio website ⚡️
-(Ongoing)
+
+![portfolio](https://github.com/cycy96/lcheeyan-portfolio/assets/127811480/d34c4d8d-ee7b-4c99-b39e-4a48d4b17a70)
+
+
+# Sections 📚
+✔️ About me <br> ✔️ GitHub Contribution Chart <br>✔️ Portfolio <br> ✔️ Design Inspiration <br>  ✔️ Contact <br> 
 
 # Technologies used
 <div>
@@ -9,8 +14,5 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg" title="Boostrap" alt="Bootstrap" width="40" height="40"/>&nbsp;
 </div>
 
-# Sections 📚
-✔️ About me <br> ✔️ GitHub Contribution Chart <br>✔️ Portfolio <br> ✔️ Design Inspiration <br>  ✔️ Contact <br> 
-
 # Live Example
-To view a live example, follow this link: [lcheeyan-portfolio.vercel.app](lcheeyan-portfolio.vercel.app)
+To view a live example, follow this link: [lcheeyan-portfolio.vercel.app](https://lcheeyan-portfolio.vercel.app/)
